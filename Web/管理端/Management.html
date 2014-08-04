@@ -41,24 +41,6 @@
         <span class="mail-status unread"></span>
 </a>
 
-      <div class="command-bar js-command-bar  ">
-          <form accept-charset="UTF-8" action="https://titou.com/search" class="command-bar-form" id="top_search_form" method="get">
-
-<div class="commandbar">
-  <span class="message"></span>
-  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off" data-username="wongzigii">
-  <div class="display hidden"></div>
-</div>
-
-
-  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
-    <span class="octicon octicon-question"></span>
-  </span>
-
-
-  <input type="hidden" name="ref" value="cmdform">
-
-</form>
         
       </div>
 
@@ -132,7 +114,7 @@
                       </li>
 
                       <li>
-                      <a href="./Email settings.html" class="js-selected-navigation-item selected" data-selected-links=" /settings/info">发型师信息</a>
+                      <a href="./Management.html" class="js-selected-navigation-item selected" data-selected-links=" /settings/info">发型师信息</a>
                       </li>
 
                       <li>
@@ -151,57 +133,53 @@
 </div>
 
         <div class="boxed-group">
-    <h3>Email</h3>
+    <h3>发型师管理</h3>
 
     <div class="boxed-group-inner">
-      <p>Your <strong>primary titou email address</strong> will be used for account-related notifications
-        (e.g. account changes and billing receipts) as well as any web-based titou operations
-        (e.g. edits and merges).</p>
+      <p>在这里你可以<strong>管理</strong> 店内发型师的信息。
+        </p>
 
 
       <ul id="settings-emails" class="boxed-group-list standalone">
         <li class="clearfix settings-email primary ">
-          <img alt="" height="20" src="./manage_files/5ab6ffe19e7548b9dc3c4098b9df0a0b" width="20"> wongzigii@outlook.com
-            <span class="label default">Primary</span>
+          <img alt="" height="20" src="./manage_files/5ab6ffe19e7548b9dc3c4098b9df0a0b" width="20"> 张松松
+            <span class="label default">已通过</span>
             <span class="public label visibility tooltipped tooltipped-multiline tooltipped-s" aria-label="This email will be used as the &#39;from&#39; address for web based titou operations.">Public</span>
                 <span class="private label visibility tooltipped tooltipped-multiline tooltipped-s" aria-label="This email will not be used as the &#39;from&#39; address for web based titou operations - we will instead use wongzigii@users.noreply.titou.com.">Private</span>
 
 
           <span class="email-actions">
               <a href="https://titou.com/users/wongzigii/emails/8469387" class="danger settings-remove-email js-delete-email" title="Delete">
-                <span class="octicon octicon-trashcan"></span>
+                              
               </a>
               <a href="https://titou.com/settings/emails#" class="settings-remove-manage-disabled-remove-email tooltipped tooltipped-nw" aria-label="At least one email is required.">
-                <span class="octicon octicon-trashcan"></span>
-              </a>
+                              </a>
 
           </span>
         </li>
         <li class="clearfix settings-email  ">
-          <img alt="" height="20" src="./manage_files/853baade487ae41b6b0f11e33fbdc5c7" width="20"> 411374377@qq.com
-            <span class="unverified label visibility tooltipped tooltipped-multiline tooltipped-s" aria-label="Unverified email addresses cannot receive notifications or be used to reset your password.">Unverified</span>
+          <img alt="" height="20" src="./manage_files/853baade487ae41b6b0f11e33fbdc5c7" width="20"> 黄智杰
+            <span class="unverified label visibility tooltipped tooltipped-multiline tooltipped-s" aria-label="此发型师需要经过审核">未审核</span>
 
 
           <span class="email-actions">
               <a href="https://titou.com/users/wongzigii/emails/8676095" class="danger settings-remove-email js-delete-email" title="Delete">
-                <span class="octicon octicon-trashcan"></span>
               </a>
               <a href="https://titou.com/settings/emails#" class="settings-remove-manage-disabled-remove-email tooltipped tooltipped-nw" aria-label="At least one email is required.">
-                <span class="octicon octicon-trashcan"></span>
               </a>
 
                 <form accept-charset="UTF-8" action="https://titou.com/users/wongzigii/emails/8676095/request_verification" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="RMdeOBjV9WeA/xGfsJZG1ykWi/v9x7daqONBaxLrrlYoD9RvTOsQvCJ1PlMOISiWtPgsIp1MWJfXwHKRyx72cg=="></div>
-                  <button type="submit" class="button minibutton">Send verification email</button>
+                  <button type="submit" class="button minibutton">发送手机验证码</button>
 </form>          </span>
         </li>
       </ul>
 
         <form accept-charset="UTF-8" action="https://titou.com/users/wongzigii/emails" class="new_user_email" id="new_user_email" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="ytCipBhkBX6L9DG3XrXUggGY5icNNaRjIcKzMY0B8bsiaVfBGe1INK8PAICP2P8Th795HMWmWJSZ3P7vOfjUTQ=="></div>
         <dl class="form new-email-form">
-            <dt><label for="email">Add email address</label></dt>
+            <dt><label for="email">理发师管理</label></dt>
           <dd>
             <div class="field-with-errors"><input class="short" id="email" name="user_email[email]" required="true" size="30" tabindex="2" type="text"></div>
-            <button type="submit" class="button">Add</button>
+            <button type="submit" class="button">增加</button>
           </dd>
         </dl>
 </form>
@@ -211,10 +189,7 @@
             <input id="toggle_visibility" name="toggle_visibility" type="checkbox" value="false">
             Keep my email address private
           </label>
-</form>          <p class="note">
-          We will use <strong>wongzigii@users.noreply.titou.com</strong> when performing Git operations and
-          sending email on your behalf.
-          </p>
+</form>          
         </div>
     </div>
   </div>
@@ -252,26 +227,15 @@
 
       <div class="container">
   <div class="site-footer">
-    <ul class="site-footer-links right">
-      <li><a href="https://status.titou.com/">Status</a></li>
-      <li><a href="http://developer.titou.com/">API</a></li>
-      <li><a href="http://training.titou.com/">Training</a></li>
-      <li><a href="http://shop.titou.com/">Shop</a></li>
-      <li><a href="https://titou.com/blog">Blog</a></li>
-      <li><a href="https://titou.com/about">About</a></li>
+    
 
-    </ul>
-
-    <a href="https://titou.com/" aria-label="Homepage">
-      <span class="mega-octicon octicon-mark-titou" title="titou"></span>
-    </a>
-
+    
     <ul class="site-footer-links">
-      <li>© 2014 <span title="0.02924s from titou-fe129-cp1-prd.iad.titou.net">titou</span>, Inc.</li>
-        <li><a href="https://titou.com/site/terms">Terms</a></li>
-        <li><a href="https://titou.com/site/privacy">Privacy</a></li>
-        <li><a href="https://titou.com/security">Security</a></li>
-        <li><a href="https://titou.com/contact">Contact</a></li>
+      <li>© 2014 <span >更美好科技</span>, Inc.</li>
+        <li><a href="https://titou.com/site/terms">我们的团队</a></li>
+        <li><a href="https://titou.com/site/privacy">关于隐私</a></li>
+        <li><a href="https://titou.com/security">安全措施</a></li>
+        <li><a href="https://titou.com/contact">联系我们</a></li>
     </ul>
   </div><!-- /.site-footer -->
 </div><!-- /.container -->
