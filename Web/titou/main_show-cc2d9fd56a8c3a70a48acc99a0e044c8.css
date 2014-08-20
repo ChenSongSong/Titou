@@ -108,5 +108,8 @@ ul.s-nav
 {
 	font-size: 22px;
 	line-height: 1.875;
-
+}
+.container .ten.columns
+{
+	margin-left:350px;
 }

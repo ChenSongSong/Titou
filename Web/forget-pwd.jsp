@@ -4,10 +4,9 @@
 
 
 <title>剃头</title>
-<link href="./login/css" media="screen" rel="stylesheet" type="text/css">
-<link href="./login/application-0ddb02fe8a06102e04f9045329628329.css" media="screen" rel="stylesheet" type="text/css">
-<link href="./login/dashboard-new-331e5ca20054843ad5d0cf078ac111fb.css" media="screen" rel="stylesheet" type="text/css">
-<link href="./login/landing-new-3d48c186876f9ebc904ddcbad8c3512f.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./login/login1.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./login/login3.css" media="screen" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="new locale-en" id="sessions">
@@ -18,7 +17,6 @@
         <div class="container login-container">
           <div class="sixteen columns center">
             <div class="form sign-in-form" style="opacity: 1; margin-top: 0px; display: block;">
-              <form accept-charset="UTF-8" action="./login/sign-in.html" class="new_user" id="new_user" method="post">
                 <div style="margin:0;padding:0;display:inline">
                   <input name="utf8" type="hidden" value="✓" >
                   <input name="authenticity_token" type="hidden"></div>
@@ -32,25 +30,24 @@
                   <div class="input">
                     <input id="user_password" name="user[password]" size="30" type="password" placeholder="验证码"></div>
                 </div>
-                <div class="submit center"><input class="submit" name="commit" type="submit" ></div>
-              </form>
-              <div class="center field">
-                <br>
-                <div class="field">
-                  <p class="center label-text" style="float:none;">
-                    你在稍后会收到一条包含验证码的手机短信。
-                  </p>
+                <div class="submit center">
+                  <input class="submit" name="commit" type="submit" value="确定" ></div>
+                <div class="center field">
+                  <br>
+                  <div class="field">
+                    <p class="center label-text" style="float:none;">
+                      你在稍后会收到一条包含验证码的手机短信。
+                    </p>
+                  </div>
+                  <br>
+                  <br>
                 </div>
-                <br>
-                <br>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 </div>
-  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
-
+  
 </body>
 </html>
