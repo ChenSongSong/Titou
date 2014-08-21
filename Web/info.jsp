@@ -60,47 +60,70 @@
       <!--内容部分--> <!-- Change Password -->
     <div class="settings-content">
     <div class="boxed-group">
-                <h3>基本资料</h3>
-                <div class="boxed-group-inner boxed-profile clearfix js-uploadable-container js-upload-avatar-image is-default" data-upload-policy-url="/upload/policies/avatars">
+    <h3>店铺信息</h3>
+    <div class="boxed-group-inner clearfix
+      js-uploadable-container js-upload-avatar-image is-default" data-upload-policy-url="/upload/policies/avatars">
 
-        <!-- 发送表单数据 -->
-                  <form accept-charset="UTF-8" action="" class="edit_user" id="profile_7384288" method="post">
-                    <div style="margin:0;padding:0;display:inline">
-                      <input name="_method" type="hidden" value="put">
-                      <input name="authenticity_token" type="hidden" value="hwH7VH7k9QB2gG7gVLoGGo9MPlhKBlS4zj6uxg4oz8qzd5Agru8O43uo6sGbmGt0puO57H/o7RRe2nUllhHC0A==">
-                    </div>
-                    <div class="form-left">
-                      <dl class="form edit-profile-avatar">
-                        <dt><label for="upload-profile-picture">头像</label></dt>
-                        <dd class="avatar-upload-container clearfix">
-                          <img alt="Wongzigii" class="profile-avatar" data-user="7384288" height="70" src="./account/7384288(1)" width="70">
-                          <div class="avatar-upload">
-                            <a href="https://titou.com/settings/profile#" class="button button-change-profile-picture">
-                              <label for="upload-profile-picture" class="label-upload-profile-picture">上传头像
-                                <input id="upload-profile-picture" type="file" multiple="multiple" class="manual-file-chooser js-manual-file-chooser js-avatar-field">
-                              </label>
-                            </a>
+      <form accept-charset="UTF-8" action="/users/wongzigii" class="columns" id="profile_7384288" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="9rnuw+4KyV5ZmTCEpYAWstHvHtGhNVNumCnTRDfBPojPnkDkwiUkbGfGMlFIDWwGPX4WuQHJ5a23ArlZyvr/ew=="></div>
+
+        <div class="column two-thirds">
+            <dl class="form edit-profile-avatar">
+  <dt><label for="upload-profile-picture">头像</label></dt>
+  <dd class="avatar-upload-container clearfix">
+    <img alt="Wongzigii" class="profile-avatar" data-user="7384288" height="70" src="https://xxx.com/7384288?v=2&amp;u=84b81e63207e7169988085d5d3e02adb70f4e21d&amp;s=140" width="70">
+    <div class="avatar-upload">
+      <a href="#" class="button button-change-profile-picture">
+        <label for="upload-profile-picture" class="label-upload-profile-picture">
+          上传
+          <input id="upload-profile-picture" type="file" multiple="multiple" class="manual-file-chooser">
+        </label>
+      </a>
+      <div class="upload-state loading">
+        <span class="button disabled">
+          <img alt="" height="16"  width="16"> Uploading...
+        </span>
+      </div>
+
+      <div class="upload-state danger too-big">
+        Please upload a picture smaller than 1 MB.
+      </div>
+
+      <div class="upload-state danger bad-dimensions">
+        Please upload a picture smaller than 10,000x10,000.
+      </div>
+
+      <div class="upload-state danger bad-file">
+        Unfortunately, we only support PNG, GIF, or JPG pictures.
+      </div>
+
+      <div class="upload-state danger bad-browser">
+        This browser doesn't support uploading pictures.
+      </div>
+
+      <div class="upload-state danger failed-request">
+        Something went really wrong and we can't process that picture.
+      </div>
+    </div> <!-- /.avatar-upload -->
+  </dd>
+</dl>
 
           <dl class="form">
-            <dt><div class="field-witpublich-errors"><label for="user_profile_name">店名</label></div></dt>
-            <dd><div class="field-with-errors"><input class="long" id="user_profile_name" name="user[profile_name]" size="30" type="text" value="名发丝佳"></div></dd>
+            <dt><label >店铺名称</label></dt>
+            <dd><input class="long" id="user_profile_name" name="user[profile_name]" size="30" type="text" value="Wongzigii"></dd>
           </dl>
-
           <dl class="form">
-            <dt><div class="field-with-errors"><label for="user_profile_address">地址</label></div></dt>
-            <dd><div class="field-with-errors"><input class="long" id="user_profile_address" name="user[profile_address]" size="30" type="text" value="山东大学"></div></dd>
+            <dt><label >联系方式</label></dt>
+            <dd><input class="long" id="user_profile_phone" name="user[profile_phone]" size="30" type="text" value="12345678910"></dd>
           </dl>
-         
           <dl class="form">
-            <dt><div class="field-with-errors"><label for="user_profile_contact">联系方式</label></div></dt>
-            <dd><div class="field-with-errors"><input class="long" id="user_profile_contact" name="user[profile_contact]" size="30" type="text" value="12345678"></div></dd>
+            <dt><label for="user_profile_location">详细地址</label></dt>
+            <dd><input class="long" id="user_profile_location" name="user[profile_location]" size="30" type="text" value="广东佛山"></dd>
           </dl>
-
+          <p><button type="submit" class="button primary">提交</button></p>
         </div>
-
-        <p class="form-footer"><button type="submit" class="button primary">提交</button></p>
 </form>
     </div>
+  </div>
   </div>
     </div>
 </div>
