@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>修改密码</title>
+    <title>发型师管理</title>
     <link href="./titou/account1.css" media="all" rel="stylesheet" type="text/css">
     <link href="./titou/account2.css" media="all" rel="stylesheet" type="text/css">
     <script language='javascript'>var curopenItem = '1';</script>
@@ -77,29 +77,45 @@
         
             <!--中间内容模块开始-->      
             <div class="settings-content">
-              <!-- 修改密码模块开始 -->
-                <div class="boxed-group">
-                    <h3>修改密码</h3>
-                    <div class="boxed-group-inner">
-                      <form accept-charset="UTF-8" action="https://titou.com/account" class="edit_user" id="change_password" method="post">
-                        <dl class="form password-confirmation-form">
-                          <dt><div class="field-with-errors"><label class="old_password">旧密码</label></div></dt>
-                          <dd><input id="user_old_password" name="user[old_password]" required="true"  type="password"></dd>
-                        </dl>
-                        <dl class="form password-confirmation-form">
-                          <dt><div class="field-with-errors"><label class="new_password">新密码</label></div></dt>
-                          <dd><input  id="user_new_password" name="user[password]" required="true" tabindex="2" type="password"></dd>
-                        </dl>
-                        <dl class="form password-confirmation-form">
-                          <dt><div class="field-with-errors"><label class="confirm_new_password">确认新密码</label></div></dt>
-                          <dd><input id="user_confirm_new_password" name="user[password_confirmation]" required="true" tabindex="2" type="password"></dd>
-                        </dl>
-                        <p>
-                          <button class="button primary" >提交</button>
-                        </p>
-                      </form>          
-                    </div>
-                </div> <!--修改密码模块结束-->
+              <!-- 验证模块开始 -->
+              <div class="boxed-group">
+                  <h3>验证</h3>
+                  <div class="boxed-group-inner">
+                    <form action="action地址" class="tel" id="change_password" method="post">
+                    <dl class="form tel-confirmation-form">
+                      <dt><div class="field-with-errors"><label class="phone_owner">请输入手机号  &nbsp;&nbsp;     (你会在30秒内收到一条包含验证码的手机短信)</label></div></dt>
+                      <dd><input id="tel" name="user[tel]" required="true" type="tel"></dd>
+                      <p><button type="submit" class="button primary">发送验证码</button></p>
+                      <dt><div class="field-with-errors"><label class="confirm">请输入验证码  &nbsp;&nbsp;     </label></div></dt>
+                      <dd><input id="id-code" name="id-code" required="true" type="id-code"></dd>
+                      <p><button type="submit" class="button primary">确认</button></p>
+                    </dl>
+                    </form>
+                  </div>
+              </div>
+              <!--验证模块结束-->
+                
+              <!--发型师管理模块开始-->
+              <div class="boxed-group">
+                  <h3>发型师管理</h3>
+                  <div class="boxed-group-inner">
+                    <form action="action地址" class="hairist_to_manage" id="" method="post">
+                      <div class="hairist">
+                        <input type='checkbox' name='hairist1' value=1>发型师1<br>
+                      </div>
+                      <div class="hairist">
+                        <input type='checkbox' name='hairist2' value=2>发型师2<br> 
+                      </div>
+                      <div class="hairist"> 
+                        <input type='checkbox' name='hairist3' value=3>发型师3 
+                      </div>
+                      <a href="删除路径" data-remote="" data-method="delete" class="minibutton danger js-remove-key">
+                      删除
+                      </a>
+                    </form>
+                  </div>
+              </div> <!--发型师管理模块结束-->
+
             </div> <!--中间内容模块结束-->  
           </div> <!-- container-->
         </div>  <!-- sitecontainer-->

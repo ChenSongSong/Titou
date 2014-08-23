@@ -14,7 +14,7 @@
 </head>
 <!---head><-->
 
-<body class="show_static" id="pages" spellcheck="false" ontouchstart="" screen_capture_injected="true">
+<body class="show_static" id="pages">
 
 <div class="" id="s-content">
 	<div class="wide header navigator">
