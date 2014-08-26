@@ -43,17 +43,17 @@
             <!--左边栏菜单开始-->
             <div class="settings-nav menu-container">
               <ul class="menu accordion">
-                      <a href="./头像路径" class="section-head">
-                        <img alt="Wongzigii" data-user="7384288" height="218" src="." width="218">
-                      </a>
                           <dt onClick='showHide("items1_1")'><b>我的店铺</b></dt>
                           <dd style='display:block' class='sitem' id='items1_1'>
                             <ul class="expanded section-nav sitemu">
                                 <li>
-                                  <a href="./info.jsp" class="js-selected-navigation-item ">基本信息</a>
+                                  <a href="./info.jsp" class="js-selected-navigation-item ">店铺资料</a>
                                 </li>
                                 <li>
-                                  <a href="./change-pwd.jsp" class="js-selected-navigation-item">修改密码</a>
+                                  <a href="./change-info.jsp" class="js-selected-navigation-item ">修改信息</a>
+                                </li>
+                                <li>
+                                  <a href="./change-pwd.jsp" class="js-selected-navigation-item selected">修改密码</a>
                                 </li>
                             </ul>
               </ul>
@@ -107,7 +107,7 @@
   </div>  <!-- .wrapper -->
 
   <!--底部导航栏开始-->
-  <div class="container">
+  <div class="container foot">
     <div class="site-footer">
       <ul class="site-footer-links">
         <li>© 2014 <span >更美好科技</span>, Inc.</li>

@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>基本信息</title>
+    <title>店铺资料</title>
     <link href="./titou/account1.css" media="all" rel="stylesheet" type="text/css">
     <link href="./titou/account2.css" media="all" rel="stylesheet" type="text/css">
     <script language='javascript'>var curopenItem = '1';</script>
@@ -43,14 +43,14 @@
             <!--左边栏菜单开始-->
             <div class="settings-nav menu-container">
               <ul class="menu accordion">
-                      <a href="./头像路径" class="section-head">
-                        <img alt="Wongzigii" data-user="7384288" height="218" src="." width="218">
-                      </a>
                           <dt onClick='showHide("items1_1")'><b>我的店铺</b></dt>
                           <dd style='display:block' class='sitem' id='items1_1'>
                             <ul class="expanded section-nav sitemu">
                                 <li>
-                                  <a href="./info.jsp" class="js-selected-navigation-item ">基本信息</a>
+                                  <a href="./info.jsp" class="js-selected-navigation-item selected">店铺资料</a>
+                                </li>
+                                <li>
+                                  <a href="./change-info.jsp" class="js-selected-navigation-item ">修改信息</a>
                                 </li>
                                 <li>
                                   <a href="./change-pwd.jsp" class="js-selected-navigation-item">修改密码</a>
@@ -60,9 +60,9 @@
               <ul class="menu accordion">
                           <dt onClick='showHide("items2_1")'><b>管理页面</b></dt>
                           <dd style='display:block' class='sitem' id='items2_1'>
-                            <ul >
+                            <ul class="expanded section-nav sitemu">
                                 <li>
-                                  <a href="./manage.jsp" class="js-selected-navigation-item ">发型师管理</a>
+                                  <a href="./manage.jsp" class="js-selected-navigation-item">发型师管理</a>
                                 </li>
                                 <li>
                                   <a href="./vip.jsp" class="js-selected-navigation-item ">会员管理</a>
@@ -74,89 +74,31 @@
               </ul>
             </div>
             <!--左边栏菜单结束-->
-        
             <!--中间内容模块开始-->      
             <div class="settings-content">
-              <!-- 信息模块开始 -->
-              <div class="boxed-group">
-                  <h3>店铺信息</h3>
-                  <div class="boxed-group-inner clearfix
-                    js-uploadable-container js-upload-avatar-image is-default">
+              <!-- 基本信息模块开始 -->
+                <div class="boxed-group">
+                    <h3>基本信息</h3>
+                    <div class="clearfix left">
+                        <a href="./头像路径" class="section-head">
+                          <img alt="Wongzigii" data-user="7384288" height="200" src="." width="200">
+                        </a>         
+                    </div>
 
-                    <form accept-charset="UTF-8" action="/users/wongzigii" class="columns" id="profile_7384288" method="post">
-                      <div style="margin:0;padding:0;display:inline">
-                      <input name="utf8" type="hidden" value="✓">
-                      <input name="_method" type="hidden" value="put">
-                      <input name="authenticity_token" type="hidden" value="9rnuw+4KyV5ZmTCEpYAWstHvHtGhNVNumCnTRDfBPojPnkDkwiUkbGfGMlFIDWwGPX4WuQHJ5a23ArlZyvr/ew==">
-                      </div>
-
-                      <div class="column two-thirds">
-
-                        <dl class="form edit-profile-avatar">
-                          <dt><label for="upload-profile-picture">头像</label></dt>
-                          <dd class="avatar-upload-container clearfix">
-
-                            <!--小头像-->
-                            <img alt="Wongzigii" class="profile-avatar" data-user="7384288" height="70" src="小头像url" width="70">
-
-                            <!--上传头像模块-->
-                            <div class="avatar-upload">
-                              <a href="#" class="button button-change-profile-picture">
-                                <label for="upload-profile-picture" class="label-upload-profile-picture">
-                                  上传
-                                  <input id="upload-profile-picture" type="file" multiple="multiple" class="manual-file-chooser">
-                                </label>
-                              </a>
-                              <!--上传状态-->
-                              <div class="upload-state loading">
-                                <span class="button disabled">
-                                  <img alt="" height="16"  width="16"> Uploading...
-                                </span>
-                              </div>
-
-                              <!--上传失败,发出警告-->
-                              <div class="upload-state danger too-big">
-                                Please upload a picture smaller than 1 MB.
-                              </div>
-
-                              <div class="upload-state danger bad-dimensions">
-                                Please upload a picture smaller than 10,000x10,000.
-                              </div>
-
-                              <div class="upload-state danger bad-file">
-                                Unfortunately, we only support PNG, GIF, or JPG pictures.
-                              </div>
-
-                              <div class="upload-state danger bad-browser">
-                                This browser doesn't support uploading pictures.
-                              </div>
-
-                              <div class="upload-state danger failed-request">
-                                Something went really wrong and we can't process that picture.
-                              </div>
-
-                            </div> <!-- 上传头像模块结束 -->
-                          </dd>
-                        </dl>
-
-                        <!--基本信息-->
-                        <dl class="form">
-                          <dt><label >店铺名称</label></dt>
-                          <dd><input class="long" id="user_profile_name" name="user[profile_name]" size="30" type="text" value="Wongzigii"></dd>
-                        </dl>
-                        <dl class="form">
-                          <dt><label >联系方式</label></dt>
-                          <dd><input class="long" id="user_profile_phone" name="user[profile_phone]" size="30" type="text" value="12345678910"></dd>
-                        </dl>
-                        <dl class="form">
-                          <dt><label for="user_profile_location">详细地址</label></dt>
-                          <dd><input class="long" id="user_profile_location" name="user[profile_location]" size="30" type="text" value="广东佛山"></dd>
-                        </dl>
-                        <p><button type="submit" class="button primary">提交</button></p>
-                      </div>
-                    </form>
-                  </div>
-              </div> <!--信息模块结束-->
+                    <div class="content left">
+                        <h1 id="barbershopName">港仔</h1>
+                        <div class="container-intro">
+                            <div class="tagList">
+                                <a href="./山东威海" class="LocationTag"><h2>山东威海</h2></a>
+                                <a href="./港仔" class="NameTag"><h2>港仔美发店</h2></a>
+                            </div>
+                            <div class="text introduction">
+                                <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. Ut vitae nunc a libero volutpat gravida. Nullam egestas mi sit amet dui scelerisque eu laoreet nisi ultrices. Ut vitae nunc a libero volutpat gravida. Nam tempor nibh a purus aliquam.</p>
+                                <p>山东省威海市环翠区山东大学威海分校港仔分店</p>
+                                <p>0123-23311222</p>
+                            </div>
+                    </div>
+                </div> <!--基本信息模块结束-->
             </div> <!--中间内容模块结束-->  
           </div> <!-- container-->
         </div>  <!-- sitecontainer-->
@@ -164,7 +106,7 @@
   </div>  <!-- .wrapper -->
 
   <!--底部导航栏开始-->
-  <div class="container">
+  <div class="container foot">
     <div class="site-footer">
       <ul class="site-footer-links">
         <li>© 2014 <span >更美好科技</span>, Inc.</li>
