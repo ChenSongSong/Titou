@@ -43,14 +43,14 @@
             <!--左边栏菜单开始-->
             <div class="settings-nav menu-container">
               <ul class="menu accordion">
-                      <a href="./头像路径" class="section-head">
-                        <img alt="Wongzigii" data-user="7384288" height="218" src="." width="218">
-                      </a>
                           <dt onClick='showHide("items1_1")'><b>我的店铺</b></dt>
                           <dd style='display:block' class='sitem' id='items1_1'>
                             <ul class="expanded section-nav sitemu">
                                 <li>
-                                  <a href="./info.jsp" class="js-selected-navigation-item ">基本信息</a>
+                                  <a href="./info.jsp" class="js-selected-navigation-item ">店铺资料</a>
+                                </li>
+                                <li>
+                                  <a href="./change-info.jsp" class="js-selected-navigation-item ">修改信息</a>
                                 </li>
                                 <li>
                                   <a href="./change-pwd.jsp" class="js-selected-navigation-item">修改密码</a>
@@ -60,7 +60,7 @@
               <ul class="menu accordion">
                           <dt onClick='showHide("items2_1")'><b>管理页面</b></dt>
                           <dd style='display:block' class='sitem' id='items2_1'>
-                            <ul >
+                            <ul class="expanded section-nav sitemu">
                                 <li>
                                   <a href="./manage.jsp" class="js-selected-navigation-item ">发型师管理</a>
                                 </li>
@@ -68,7 +68,7 @@
                                   <a href="./vip.jsp" class="js-selected-navigation-item ">会员管理</a>
                                 </li>
                                 <li>
-                                  <a href="./pay.jsp" class="js-selected-navigation-item ">收入管理</a>
+                                  <a href="./pay.jsp" class="js-selected-navigation-item selected">收入管理</a>
                                 </li>
                             </ul>
               </ul>
@@ -77,27 +77,6 @@
         
             <!--中间内容模块开始-->      
             <div class="settings-content">
-              <!-- 收入模块开始 -->
-              <div class="boxed-group">
-                  <h3>收入情况</h3>
-
-                  
-                  <!--div class="boxed-group-inner">
-                    <form action="action地址" class="tel" id="change_password" method="post">
-                    <dl class="form tel-confirmation-form">
-                      <dt><div class="field-with-errors"><label class="phone_owner">请输入手机号  &nbsp;&nbsp;     (你会在30秒内收到一条包含验证码的手机短信)</label></div></dt>
-                      <dd><input id="tel" name="user[tel]" required="true" type="tel"></dd>
-                      <p><button type="submit" class="button primary">发送验证码</button></p>
-                      <dt><div class="field-with-errors"><label class="confirm">请输入验证码  &nbsp;&nbsp;     </label></div></dt>
-                      <dd><input id="id-code" name="id-code" required="true" type="id-code"></dd>
-                      <p><button type="submit" class="button primary">确认</button></p>
-                    </dl>
-                    </form>
-                  </div-->
-              </div>
-              <!--收入模块结束-->
-                
-              
 
             </div> <!--中间内容模块结束-->  
           </div> <!-- container-->
@@ -106,7 +85,7 @@
   </div>  <!-- .wrapper -->
 
   <!--底部导航栏开始-->
-  <div class="container">
+  <div class="container foot">
     <div class="site-footer">
       <ul class="site-footer-links">
         <li>© 2014 <span >更美好科技</span>, Inc.</li>

@@ -43,14 +43,14 @@
             <!--左边栏菜单开始-->
             <div class="settings-nav menu-container">
               <ul class="menu accordion">
-                      <a href="./头像路径" class="section-head">
-                        <img alt="Wongzigii" data-user="7384288" height="218" src="." width="218">
-                      </a>
                           <dt onClick='showHide("items1_1")'><b>我的店铺</b></dt>
                           <dd style='display:block' class='sitem' id='items1_1'>
                             <ul class="expanded section-nav sitemu">
                                 <li>
-                                  <a href="./info.jsp" class="js-selected-navigation-item ">基本信息</a>
+                                  <a href="./info.jsp" class="js-selected-navigation-item ">店铺资料</a>
+                                </li>
+                                <li>
+                                  <a href="./change-info.jsp" class="js-selected-navigation-item ">修改信息</a>
                                 </li>
                                 <li>
                                   <a href="./change-pwd.jsp" class="js-selected-navigation-item">修改密码</a>
@@ -60,9 +60,9 @@
               <ul class="menu accordion">
                           <dt onClick='showHide("items2_1")'><b>管理页面</b></dt>
                           <dd style='display:block' class='sitem' id='items2_1'>
-                            <ul >
+                            <ul class="expanded section-nav sitemu">
                                 <li>
-                                  <a href="./manage.jsp" class="js-selected-navigation-item ">发型师管理</a>
+                                  <a href="./manage.jsp" class="js-selected-navigation-item selected">发型师管理</a>
                                 </li>
                                 <li>
                                   <a href="./vip.jsp" class="js-selected-navigation-item ">会员管理</a>
@@ -77,18 +77,29 @@
         
             <!--中间内容模块开始-->      
             <div class="settings-content">
-              <!-- 验证模块开始 -->
+                            <!-- 验证模块开始 -->
               <div class="boxed-group">
                   <h3>验证</h3>
                   <div class="boxed-group-inner">
                     <form action="action地址" class="tel" id="change_password" method="post">
                     <dl class="form tel-confirmation-form">
-                      <dt><div class="field-with-errors"><label class="phone_owner">请输入手机号  &nbsp;&nbsp;     (你会在30秒内收到一条包含验证码的手机短信)</label></div></dt>
-                      <dd><input id="tel" name="user[tel]" required="true" type="tel"></dd>
-                      <p><button type="submit" class="button primary">发送验证码</button></p>
-                      <dt><div class="field-with-errors"><label class="confirm">请输入验证码  &nbsp;&nbsp;     </label></div></dt>
-                      <dd><input id="id-code" name="id-code" required="true" type="id-code"></dd>
-                      <p><button type="submit" class="button primary">确认</button></p>
+                      <dt style="
+    margin-bottom: 0px;
+"><div class="field-with-errors">
+</div></dt>
+                    <p>
+                      <input id="tel" name="user[tel]" required="true" placeholder="手机号" type="tel">
+                      <button type="submit" class="button primary" style="
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    margin-top: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+">发送验证码</button></p>
+                      
+                      <p><input id="id-code" name="id-code" required="true" type="id-code" placeholder="验证码">
+
+                      <button type="submit" class="button primary">确认</button></p>
                     </dl>
                     </form>
                   </div>
@@ -101,21 +112,20 @@
                   <div class="boxed-group-inner">
                     <form action="action地址" class="hairist_to_manage" id="" method="post">
                       <div class="hairist">
-                        <input type='checkbox' name='hairist1' value=1>发型师1<br>
+                        <input type="checkbox" name="hairist1" value="1">发型师1<br>
                       </div>
                       <div class="hairist">
-                        <input type='checkbox' name='hairist2' value=2>发型师2<br> 
+                        <input type="checkbox" name="hairist2" value="2">发型师2<br> 
                       </div>
                       <div class="hairist"> 
-                        <input type='checkbox' name='hairist3' value=3>发型师3 
+                        <input type="checkbox" name="hairist3" value="3">发型师3 
                       </div>
-                      <a href="删除路径" data-remote="" data-method="delete" class="minibutton danger js-remove-key">
+                      <a href="删除路径" data-remote="" data-method="delete" class="button primary danger">
                       删除
                       </a>
                     </form>
                   </div>
               </div> <!--发型师管理模块结束-->
-
             </div> <!--中间内容模块结束-->  
           </div> <!-- container-->
         </div>  <!-- sitecontainer-->
@@ -123,7 +133,7 @@
   </div>  <!-- .wrapper -->
 
   <!--底部导航栏开始-->
-  <div class="container">
+  <div class="container foot">
     <div class="site-footer">
       <ul class="site-footer-links">
         <li>© 2014 <span >更美好科技</span>, Inc.</li>
