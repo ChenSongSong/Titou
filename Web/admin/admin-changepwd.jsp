@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>修改密码</title>
-    <link href="./titou/account1.css" media="all" rel="stylesheet" type="text/css">
-    <link href="./titou/account2.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../titou/account1.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../titou/account2.css" media="all" rel="stylesheet" type="text/css">
     <!--js脚本-->
     <script language='javascript'>var curopenItem = '1';</script>
-    <script language="javascript" type="text/javascript" src="./login/menu.js"></script>
+    <script language="javascript" type="text/javascript" src="../login/menu.js"></script>
 </head>
 <!--头部结束-->
 

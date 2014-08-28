@@ -6,7 +6,7 @@
     <link href="../titou/account2.css" media="all" rel="stylesheet" type="text/css">
     <!--js折叠脚本-->
     <script language='javascript'>var curopenItem = '1';</script>
-    <script language="javascript" type="text/javascript" src="./login/menu.js"></script>
+    <script language="javascript" type="text/javascript" src="../login/menu.js"></script>
   </head>
   <body>
     <div class="settings-nav menu-container">
