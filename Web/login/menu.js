@@ -1,4 +1,3 @@
-<!--
 
 function showHide(objname)
 {

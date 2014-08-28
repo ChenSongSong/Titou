@@ -1,4 +1,6 @@
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+html{font-family:sans-serif;background:white;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}
@@ -38,7 +40,7 @@ body,input,select,textarea,button
 body{
 	min-width:1020px;
 	color:#6C6E70;
-	background-color:#EBEBEB;
+	background-color:#fff;
 	background-size: 100%;
 }
 a{color:#6C6E70;text-decoration:none}
@@ -395,6 +397,7 @@ a.label-link:hover{text-decoration:none}
 .site.clearfix
 {
 	min-height: 549px;
+	width:100%;
 }
 .hairist
 {
@@ -411,7 +414,8 @@ li.down-list
 	margin-right: 114.5px;
 	margin-left: 114.5px;
 	background: #fff;
-	height:599px;
+	min-height:850px;
+	min-width: 1058px;
 }
 a.js-selected-navigation-item
 {
@@ -460,5 +464,8 @@ h1#barbershopName
 	margin:3px 5px 10px 3px;
 	display: block;
 	width: 100%;
-
+}
+.gray-block
+{
+	background-color: #cecece;
 }
