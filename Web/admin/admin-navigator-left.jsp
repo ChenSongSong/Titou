@@ -2,8 +2,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>修改密码</title>
-    <link href="./titou/account1.css" media="all" rel="stylesheet" type="text/css">
-    <link href="./titou/account2.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../titou/account1.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../titou/account2.css" media="all" rel="stylesheet" type="text/css">
     <!--js折叠脚本-->
     <script language='javascript'>var curopenItem = '1';</script>
     <script language="javascript" type="text/javascript" src="./login/menu.js"></script>
