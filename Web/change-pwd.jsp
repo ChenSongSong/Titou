@@ -8,8 +8,6 @@
     <title>修改密码</title>
     <link href="./titou/account1.css" media="all" rel="stylesheet" type="text/css">
     <link href="./titou/account2.css" media="all" rel="stylesheet" type="text/css">
-    <script language='javascript'>var curopenItem = '1';</script>
-    <script language="javascript" type="text/javascript" src="./login/menu.js"></script>
 </head>
 <!--头部结束-->
 <body>

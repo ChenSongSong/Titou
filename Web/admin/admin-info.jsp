@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>基本信息</title>
-    <link href="./titou/account1.css" media="all" rel="stylesheet" type="text/css">
-    <link href="./titou/account2.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../titou/account1.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../titou/account2.css" media="all" rel="stylesheet" type="text/css">
     <script language='javascript'>var curopenItem = '1';</script>
     <script language="javascript" type="text/javascript" src="./login/menu.js"></script>
 </head>
@@ -25,11 +25,11 @@
                         </div>
 
                         <div class="content left">
-                            <h1 id="barbershopName">港仔</h1>
+                            <h1 id="userName">员工001</h1>
                             <div class="container-intro">
                                 <div class="tagList">
                                     <a href="./山东威海" class="LocationTag"><h2>山东威海</h2></a>
-                                    <a href="./港仔" class="NameTag"><h2>港仔美发店</h2></a>
+                                    <a href="./港仔" class="NameTag"><h2>部门</h2></a>
                                 </div>
                                 <div class="text introduction">
                                     <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. Ut vitae nunc a libero volutpat gravida. Nullam egestas mi sit amet dui scelerisque eu laoreet nisi ultrices. Ut vitae nunc a libero volutpat gravida. Nam tempor nibh a purus aliquam.</p>

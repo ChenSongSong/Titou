@@ -4,11 +4,8 @@
 
 <title>剃头</title>
 
-<link href="./titou/css" media="screen" rel="stylesheet" type="text/css">
-<link href="./titou/main_show-cc2d9fd56a8c3a70a48acc99a0e044c8.css" media="screen" rel="stylesheet" type="text/css">
-<link href="./titou/css(1)" media="screen" rel="stylesheet" type="text/css">
+<link href="./titou/homepage.css" media="screen" rel="stylesheet" type="text/css">
 
-<style type="text/css">.fancybox-margin{margin-right:15px;}</style>
 <style type="text/css"></style>
 </head>
 <!---head><-->
@@ -18,7 +15,6 @@
 <div class="" id="s-content">
 	<div class="wide header navigator">
 		<div class="container">
-			<div class="ten columns s-nav-column" >
 				<div class="nav" style="margin-top: 12px;">
 					<ul class="s-nav"  style="font-family: inherit;">
 						<span><!---->
@@ -30,7 +26,6 @@
 						</span>
 					</ul>
 				</div>
-			</div>
 		</div>
 	</div>
 
@@ -38,7 +33,7 @@
 			<li class="slide selected">
 				<div class="wide image s-app-intro strikingly-light-text lazy-background hasImage" >
 					<div class="container">
-						<div class="seven columns fixed-center">
+						<div class="columns fixed-center">
 							<div class="br">
 								<div class="media content">
 									<div class="content">
@@ -93,16 +88,31 @@
 				</div>
 			</li>
 	</div>
-	<div class="footer">
-			<div class="site-footer">
+
+
+	<div class="product">
+		<article>
+			<div class="container">	
+				<header><h1>剃头</h1></header>
+				<section>
+					<p>您亲爱的理发师已经心急如焚</p>
+					<p>剃头现已上架 Google Play Store, for free. :)</p>
+					<p>iOS Client is coming.</p>
+				</section>
+			</div>
+		</article>
+	</div>
+
+	<footer class="site-footer">
+		<div class="container">
 				<ul class="site-footer-links">
 			            <li>© 2014<span>更美好科技</span>, Inc.</li>
 			            <li><a href="">关于我们</a></li>
 			            <li><a href="">服务协议</a></li>
 			            <li><a href="">加入我们</a></li>
 	    		</ul>
-			</div>
-	</div>
+	    </div>
+	</footer>
 </div>
 </body>
 </html>
