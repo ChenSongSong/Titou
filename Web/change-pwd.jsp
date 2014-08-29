@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+
 <!-- saved from url=(0033)https://titou.com/settings/admin -->
-<html class="   ">
+<html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">

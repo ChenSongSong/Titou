@@ -1,0 +1,43 @@
+html
+{
+	width:100%;
+}
+.top-bg
+{	
+	margin-left: 0px;
+	margin-top: 0px;
+	border:0;
+}
+.head>h1
+{	
+	vertical-align: middle;
+	margin-bottom: 0px;
+	margin-top:0px;
+	width:250px;
+	margin:0px;
+}
+.right
+{	
+	min-width:430px;
+	float:right;
+	text-align: right;
+
+}
+body
+{	
+	margin-top: 30px;
+	margin-left:39px;
+	margin-right: 39px;
+	height: 60px;
+	font-size: 14px;
+	font-family: "Songti SC Regular","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a
+{	
+	color:#3ec9c1;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}

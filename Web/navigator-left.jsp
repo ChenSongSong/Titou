@@ -15,7 +15,7 @@
                               <dd  class="sitem" id="items1_1">
                                 <ul class="expanded section-nav sitemu">
                                     <li>
-                                      <a href="./info.jsp" class="js-selected-navigation-item ">店铺资料</a>
+                                      <a href="./info.jsp" class="js-selected-navigation-item selected">店铺资料</a>
                                     </li>
                                     <li>
                                       <a href="./change-info.jsp" class="js-selected-navigation-item ">修改信息</a>
@@ -36,7 +36,7 @@
                                       <a href="./vip.jsp" class="js-selected-navigation-item ">会员管理</a>
                                     </li>
                                     <li>
-                                      <a href="./pay.jsp" class="js-selected-navigation-item selected">收入管理</a>
+                                      <a href="./pay.jsp" class="js-selected-navigation-item">收入管理</a>
                                     </li>
                                 </ul>
                   </dd></ul>

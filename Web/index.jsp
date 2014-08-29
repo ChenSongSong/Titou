@@ -8,27 +8,22 @@
     <script language='javascript'>var curopenItem = '1';</script>
     <script language="javascript" type="text/javascript" src="./login/menu.js"></script>
   </head>
-  <frameset rows="50, *" cols="*" frameborder="no" border="0" framespacing="0">
-    <frame src="./top.jsp" name="topFrame" scrolling="no">
-    <frameset cols="114.5px, *, 114.5px">
-
-      <frame src="./gray-block.jsp"></frame>
-
-      <frameset rows="20,*" cols="*"  frameborder="no" border="0" framespacing="0">
-          <frame></frame>
-
+  <frameset cols="114.5px, *, 114.5px" rows="*" frameborder="no" border="0" framespacing="0">
+    <frame src="./gray-block.jsp" ></frame>
+    <frameset rows="110px, *, 50px" cols="*" frameborder="no" border="0" framespacing="0">
+        <frame src="./top.jsp" name="topFrame" scrolling="no">
           <frameset cols="39px, 150px, *, 785px, 39px">
               <frame></frame>
               <frame src="./navigator-left.jsp" noresize name = "navigator" scrolling="no">
               <frame></frame>
-              <frame src="./change-pwd.jsp" noresize name = "main" scrolling="no">
+              <frame src="./info.jsp" noresize name = "main" scrolling="no">
               <frame></frame> 
-          </frameset></frameset>
-
-      <frame src="./gray-block.jsp"></frame>
-
+          </frameset>
+        <frame src="./footer.jsp" scrolling="no"></frame>
     </frameset>
+    <frame src="./gray-block.jsp"></frame>
   </frameset>
+
   <noframes>
     <body>您的浏览器太老了,不支持frame框架</body>
   </noframes>
